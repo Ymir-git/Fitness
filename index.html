@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
+    <title>Freefit</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                 <a href="#" class="logo"><img src="images/logo.svg" alt=""></a>
+                 <button class="burger-menu" onclick="openModal()"></button>
+                <nav class="nav">
+                    <a class="nav-item" href="#">Мероприятия</a>
+                    <a class="nav-item" href="#">Расписание</a>
+                    <a class="nav-item" href="#">О&nbsp;компании</a>
+                </nav>
+                <a class="info-site" href="#">info@freefit.com</a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-text">
+                    <h1 class="hero-title">Онлайн тренировки любой сложности</h1>
+                    <p class="hero-description"><span>&gt;&nbsp;15</span>тренировок</p>
+                    <div class="hero-item">
+                        <p>в области спортивной физиологии и нутрициологии</p>
+                        <button class="hero-btn">Узнать подробнее</button>
+                    </div>
+                </div>
+                <div class="hero-bg"></div>
+                <img class="hero-img" src="images/image.png" alt="hero-img">
+                <a class="scroll-btn" href="#schedule"></a>
+            </div>
+        </div>
+    </section>
+    <main class="schedule" id="schedule">
+        <div class="container">
+            <div class="schedule-wrapper">
+                <div class="schedule-header">
+                    <h2 class="schedule-title">Расписание тренировок</h2>
+                    <time class="schedule-data" datetime="06-22">22 - 28 июня</time>
+                </div>
+                <div class="schedule-day">
+                    <div class="schedule-item">
+                        <div class="time">
+                            <time datetime="06-22">22 июня, 10:00</time>
+                        </div>
+                        <img class="schedule-icon" src="images/body.svg" alt="body">
+                        <p class="schedule-text">Функциональный тренинг</p>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time">
+                            <time datetime="06-24">24 июня, 10:00</time>
+                        </div>
+                        <img class="schedule-icon" src="images/bottle.svg" alt="bottle">
+                        <p class="schedule-text">Body sculpt</p>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time">
+                            <time datetime="06-26">26 июня, 11:00</time>
+                        </div>
+                        <img class="schedule-icon" src="images/dumbbell.svg" alt="dumbbell">
+                        <p class="schedule-text">L.A.B.</p>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time">
+                            <time datetime="06-23">23 июня, 10:00</time>
+                        </div>
+                        <img class="schedule-icon" src="images/jump.svg" alt="jump">
+                        <p class="schedule-text">Силовой микс</p>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time">
+                            <time datetime="06-25">25 июня, 11:00</time>
+                        </div>
+                        <img class="schedule-icon" src="images/heart.svg" alt="heart">
+                        <p class="schedule-text">Дыхательные практики</p>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="time">
+                            <time datetime="06-27">27 июня, 10:00</time>
+                        </div>
+                        <img class="schedule-icon" src="images/weight.svg" alt="weight">
+                        <p class="schedule-text">Комплексная разминка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe-wrapper">
+                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                <form class="form" action="#">
+                    <div>
+                        <input class="input" type="email" placeholder="Ваш e-mail">
+                        <div class="agreement">
+                            <input class="checkbox" type="checkbox" id="01">
+                            <label for="01">Согласен с обработкой <a href="#" target="_blank">персональных данных</a></label>
+                        </div>
+                    </div>
+                    <button class="subscribe-btn" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-us">
+                    <div class="about-singup">
+                        <h2 class="about-title">О&nbsp;компании</h2>
+                        <p class="about-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
+                        <a class="about-btn" href="#">Записаться</a>
+                    </div>
+                        <img class="about-img" src="images/about-img.jpg" alt="">
+                </div>
+                <div class="about-main">
+                    <div class="about-item">
+                        <h3 class="item-title">Экономия времени </h3>
+                        <p class="item-text">Не нужно тратить время на дорогу</p>
+                    </div>
+                    <div class="about-item">
+                        <h3 class="item-title">Индивидуальный подход</h3>
+                        <p class="item-text">Внимание тренера пренадлежит только вам</p>
+                    </div>
+                    <div class="about-item">
+                        <h3 class="item-title">Экономия денег</h3>
+                        <p class="item-text">Средняя цена одной тренировки - 700₽</p>
+                    </div>
+                    <div class="about-item">
+                        <h3 class="item-title">Опытный персонал</h3>
+                        <p class="item-text">Стаж работы у наших тренеров от 5 лет</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#" class="logo"><img src="images/logo.svg" alt=""></a>
+               <nav class="footer-nav">
+                   <a class="footer-nav-item" href="#">Мероприятия</a>
+                   <a class="footer-nav-item" href="#">Расписание</a>
+                   <a class="footer-nav-item" href="#">О&nbsp;компании</a>
+               </nav>
+               <a class="footer-info-site" href="#">info@freefit.com</a>
+           </div>
+           <div class="footer-bottom">
+            <a href="#" class="rights">&copy; 2022, Все права защищены</a>
+            <p class="footer-text">Сделано в рамках курса учебной платформы <a href="#">Frontend Blok</a></p>
+           </div>
+        </div>
+    </footer>
+    <div class="modal" id="modal">
+        <div class="modal-btn">
+            <img class="modal-logo" src="images/logo-modal.svg" alt="">
+            <button class="modal-close" onclick="closeModal()"></button>
+        </div>
+        <nav class="nav _modal">
+            <a href="#" class="nav-link">Мероприятия</a>
+            <a href="#" class="nav-link">Расписание</a>
+            <a href="#" class="nav-link">О компании</a>
+        </nav>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
