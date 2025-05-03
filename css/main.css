@@ -207,7 +207,7 @@ body{
 .schedule-title{
     font-size: 40px;
     line-height: 125%; 
-    width: 356px;
+    max-width: 356px;
     margin: 0;  
 }
 .schedule-data{
@@ -705,20 +705,118 @@ label > a:hover{
     .about-us {
         padding-top: 90px;
         gap: 38px;
-        
+    }
+    .about-singup{
+      padding-bottom: 28px;
+      flex-basis: 50%;
+    }
+    .about-btn{
+      padding: 23px 46px;
     }
     .about-img{
         flex-basis: 50%;
-        width: 385px;
+        width: 382px;
         height: 358px;
+        object-fit: cover;
+        object-position: center;
     }
     .about-main{
        margin-bottom: 76px;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
     }
     .about-item{
-        
+     
     }
     .footer-nav{
         display: none;
     }
+}
+@media (max-width: 768px){
+  .footer{
+    padding-bottom: 0;
+  }
+  .footer-bottom{
+    display: none;
+  }
+}
+@media (max-width: 710px){
+  .form{
+    flex-direction: column;
+    padding-right: 20px;
+  }
+  .input{
+    width: 97%;
+  }
+  .about-us {
+    gap: 20px;
+  }
+  .about-img{
+    width: 260px;
+  }
+  .subscribe-title::before{
+    left: 4px;
+    top: -25px;
+  }
+}
+@media (max-width: 600px){
+  .hero-img,
+  .scroll-btn,
+  .hero-bg{
+    display: none;
+  }
+  .header-wrapper {
+    gap: 30px;
+  }
+  .hero-wrapper{
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-text{
+    flex-basis: 100%;
+  }
+  .hero-item{
+    margin: 0 auto;
+  }
+  .schedule-title{
+    font-size: 26px;
+    max-width: 200px;
+  }
+  .schedule-data{
+    font-size: 16px;
+  }
+  .about-us{
+    justify-content: center;
+  }
+  .about-singup{
+    flex-basis: 75%;
+    text-align: center;
+  }
+  .about-img{
+    display: none;
+  }
+  .subscribe-title::before {
+    display: none;
+  }
+  .schedule-day{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 224px);
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f";
+  }
+  .checkbox:checked + label, .checkbox:not(:checked) + label {
+
+    padding-left: 23px;
+  }
+  .about-main{
+    grid-template-columns: 1fr;
+  }
+  .footer-top{
+    gap: 0;
+  }
 }
